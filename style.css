@@ -250,6 +250,10 @@ form textarea {
         text-align: center;
     }
 
+    .about .col {
+        text-align: center;
+    }
+
     .services .col-5 {
         flex-basis: 25%;
         margin-bottom: 20px;

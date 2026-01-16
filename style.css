@@ -326,6 +326,7 @@ form textarea {
 
     .menu-icon {
         display: block;
+        margin-left: -15px;
     }
 
     .navbar {
@@ -355,11 +356,6 @@ form textarea {
     #MenuItems li {
         display: block;
         margin: 15px 0;
-    }
-
-    .menu-icon {
-        margin-left: 15px;
-        display: block;
     }
 }
 

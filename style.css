@@ -263,6 +263,26 @@ form textarea {
         display: none;
         margin-right: 10px;
     }
+
+    .services-page .servicepage .row {
+        flex-direction: column;
+    }
+
+    .services-page .service-image {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .services-page .servicepage .col-2:not(.service-image) {
+        order: 2;
+        text-align: center;
+    }
+
+    .services-page .servicepage img {
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+    }
 }
 
 /* Mobile (≤ 768px) */

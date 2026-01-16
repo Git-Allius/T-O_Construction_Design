@@ -267,7 +267,6 @@ form textarea {
         display: contents !important;
     }
 
-    /* Make container the flex wrapper */
     .home-page .services .container {
         display: flex;
         flex-wrap: wrap;

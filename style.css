@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* HEADER / HERO */
+.header {
+    background:
+        linear-gradient(
+            rgba(10, 30, 60, 0.75),
+            rgba(0, 0, 0, 0.9)
+        ),
+        url('images/hero.jpg') center/cover no-repeat;
+    padding-bottom: 80px;
+}
+
+.header h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.header p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+}
+
+.header .col-2 {
+    text-align: center;
+}
+
+.header h1,
+.header h2,
+.header p {
+    color: white;
+}
+
+/* NAVIGATION */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 60px;
+}
+
+.logo img {
+    width: 260px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    font-weight: 600;
+    transition: opacity 0.3s;
+}
+
+nav ul li a:hover {
+    opacity: 0.7;
+}
+
+/* LAYOUT */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.col {
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+.col-2 {
+    flex: 1 1 50%;
+    padding: 30px;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 14px 40px;
+    margin-top: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #222;
+    transform: translateY(-2px);
+}
+
+/* SERVICES */
+.services {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.service {
+    background: #f4f4f4;
+    margin: 15px;
+    width: 200px;
+    padding: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* ABOUT */
+.about {
+    padding: 80px 0;
+}
+
+.about img {
+    border-radius: 6px;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* CONTACT FORM */
+.contact {
+    background: white;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+/* FOOTER */
+.footer {
+    background: black;
+    padding: 60px 0;
+}
+
+.footer p,
+.footer .title {
+    color: white;
+    text-align: center;
+}
+
+/* MOBILE MENU ICON */
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#MenuItems {
+    display: block;
+}
+
+/* Responsive Design */
+
+/* Tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+
+    .navbar {
+        padding: 20px 30px;
+    }
+
+    .header h1 {
+        font-size: 48px;
+    }
+
+    .header p {
+        font-size: 17px;
+    }
+
+    .col-2 {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .services .col-5 {
+        flex-basis: 33%;
+        margin-bottom: 20px;
+    }
+
+    #MenuItems {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: none;
+        margin-right: 10px;
+    }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+
+    /* NAV */
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* HERO */
+    .header h1 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    /* LAYOUT */
+    .row {
+        flex-direction: column;
+    }
+
+    .col,
+    .col-2 {
+        flex-basis: 100%;
+        padding: 20px 0;
+    }
+
+    /* SERVICES */
+    .services {
+        padding: 40px 0;
+    }
+
+    .service {
+        font-size: 16px;
+    }
+
+    /* CONTACT FORM */
+    .contact {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* BUTTONS */
+    .btn {
+        width: 100%;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    #MenuItems {
+        display: none;
+        background: rgba(10, 30, 60, 0.95);
+        position: absolute;
+        top: 55px;
+        right: 0;
+        width: 200px;
+        text-align: right;
+        padding: 15px;
+        border-radius: 6px;
+    }
+
+    #MenuItems li {
+        display: block;
+        margin: 15px 0;
+    }
+
+    .menu-icon {
+        margin-left: 15px;
+        display: block;
+    }
+}
+
+/* Small Phones (≤ 480px) */
+@media (max-width: 480px) {
+
+    .logo img {
+        width: 200px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .header p {
+        font-size: 15px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .service {
+        padding: 18px;
+    }
+}

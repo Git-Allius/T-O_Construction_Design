@@ -231,7 +231,7 @@ form textarea {
 /* Responsive Design */
 
 /* Tablets (≤ 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
 
     .navbar {
         padding: 20px 30px;
@@ -251,8 +251,44 @@ form textarea {
     }
 
     .services .col-5 {
-        flex-basis: 33%;
+        flex-basis: 25%;
         margin-bottom: 20px;
+    }
+
+    .service {
+        background: #f4f4f4;
+        height: 100%;
+        padding: 25px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .home-page .services .row {
+        display: contents !important;
+    }
+
+    /* Make container the flex wrapper */
+    .home-page .services .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .home-page .services .col-5 {
+        flex: 0 0 calc(50% - 12.5px);
+        max-width: calc(50% - 12.5px);
+        display: flex;
+    }
+
+    .home-page .services .service {
+        width: 100%;
+        margin: 0;
+        min-height: 90px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     #MenuItems {
@@ -330,7 +366,38 @@ form textarea {
     }
 
     .service {
-        font-size: 16px;
+        background: #f4f4f4;
+        margin: 15px;
+        width: 400px;
+        padding: 25px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .home-page .services .container {
+        display: block;
+    }
+
+    .home-page .services .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-page .services .col-5 {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .home-page .services .service {
+        width: 100%;
+        max-width: 90%;
+        margin: 10px auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     /* CONTACT FORM */
@@ -399,6 +466,11 @@ form textarea {
     }
 
     .service {
-        padding: 18px;
+        background: #f4f4f4;
+        margin: 15px;
+        width: 300px;
+        padding: 25px;
+        font-weight: 600;
+        text-transform: uppercase;
     }
 }
